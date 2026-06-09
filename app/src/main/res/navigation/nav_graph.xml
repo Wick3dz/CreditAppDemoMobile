@@ -19,5 +19,31 @@
         android:id="@+id/step2Fragment"
         android:name="com.blas.creditappdemo.ui.form.view.Step2Fragment"
         android:label="Step 2"
-        tools:layout="@layout/fragment_step2" />
+        tools:layout="@layout/fragment_step2">
+        <action
+            android:id="@+id/action_step2Fragment_to_step3Fragment"
+            app:destination="@id/step3Fragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_step2_to_step3"
+        app:destination="@id/step3Fragment" />
+
+    <fragment
+        android:id="@+id/step3Fragment"
+        android:name="com.blas.creditappdemo.ui.form.view.Step3Fragment"
+        android:label="Step 3"
+        tools:layout="@layout/fragment_step3" >
+        <action
+            android:id="@+id/action_step3Fragment_to_step4Fragment"
+            app:destination="@id/step4Fragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_step3_to_step4"
+        app:destination="@id/step4Fragment" />
+
+    <fragment
+        android:id="@+id/step4Fragment"
+        android:name="com.blas.creditappdemo.ui.form.view.Step4Fragment"
+        android:label="Step 4"
+        tools:layout="@layout/fragment_step4" />
 </navigation>

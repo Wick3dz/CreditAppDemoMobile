@@ -1,7 +1,510 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Step 2" android:textSize="20sp" />
-</LinearLayout>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDI KASUS INDUSTRI KEUANGAN"
+                android:textSize="11sp"
+                android:textColor="#5B6CF9"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengajuan kredit digital"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulir → verifikasi dokumen → scoring otomatis"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- PROGRESS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="28dp">
+
+                <!-- Step 3 — aktif (indigo) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#10B981"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="✓"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Formulir"
+                        android:textSize="10sp"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <!-- Garis step 1→2 (selesai) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#10B981" />
+
+                <!-- Step 2 — pending (abu outline) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#5B6CF9"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Verifikasi"
+                        android:textSize="10sp"
+                        android:textColor="#5B6CF9"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#D1D5DB" />
+
+                <!-- Step 4 — pending (abu outline) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:strokeColor="#D1D5DB"
+                        app:strokeWidth="1.5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="3"
+                            android:textSize="13sp"
+                            android:textColor="#9CA3AF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Scoring"
+                        android:textSize="10sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <!-- Garis step 3→4 (pending) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#D1D5DB" />
+
+                <!-- Step 4 — pending (abu outline) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:strokeColor="#D1D5DB"
+                        app:strokeWidth="1.5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4"
+                            android:textSize="13sp"
+                            android:textColor="#9CA3AF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Keputusan"
+                        android:textSize="10sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+        <!-- Card Verifikasi Dokumen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi dokumen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo: tombol 'Periksa' mensimulasikan pemeriksaan OCR &amp; keaslian dokumen."
+                android:textSize="13sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Item KTP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:id="@+id/iconBgKtp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#DBEAFE"
+                    android:layout_marginEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/iconKtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📄"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KTP elektronik / identitas"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827" />
+
+                    <TextView
+                        android:id="@+id/badgeKtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menunggu"
+                        android:textSize="11sp"
+                        android:textColor="#92400E"
+                        android:background="#FEF3C7"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnPeriksaKtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Periksa"
+                    android:textSize="12sp"
+                    android:textColor="#5B6CF9"
+                    android:backgroundTint="#EEF2FF"
+                    android:stateListAnimator="@null" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F3F4F6"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Item Slip Gaji -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <FrameLayout
+                    android:id="@+id/iconBgSlipGaji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#DBEAFE"
+                    android:layout_marginEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/iconSlipGaji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📄"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Slip gaji 3 bulan terakhir"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827" />
+
+                    <TextView
+                        android:id="@+id/badgeSlipGaji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menunggu"
+                        android:textSize="11sp"
+                        android:textColor="#92400E"
+                        android:background="#FEF3C7"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnPeriksaSlipGaji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Periksa"
+                    android:textSize="12sp"
+                    android:textColor="#5B6CF9"
+                    android:backgroundTint="#EEF2FF"
+                    android:stateListAnimator="@null" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F3F4F6"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Item NPWP -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <FrameLayout
+                    android:id="@+id/iconBgNpwp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#DBEAFE"
+                    android:layout_marginEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/iconNpwp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📄"
+                        android:textSize="18sp"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NPWP"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827" />
+
+                    <TextView
+                        android:id="@+id/badgeNpwp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menunggu"
+                        android:textSize="11sp"
+                        android:textColor="#92400E"
+                        android:background="#FEF3C7"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnPeriksaNpwp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Periksa"
+                    android:textSize="12sp"
+                    android:textColor="#5B6CF9"
+                    android:backgroundTint="#EEF2FF"
+                    android:stateListAnimator="@null" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi semua dokumen untuk melanjutkan."
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tombol Lanjut (disabled) -->
+            <Button
+                android:id="@+id/btnLanjutScoring"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Lanjut ke scoring"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:backgroundTint="#A5B4FC"
+                android:enabled="false"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Tombol Kembali -->
+            <Button
+                android:id="@+id/btnKembali"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Kembali ke formulir"
+                android:textSize="14sp"
+                android:textColor="#374151"
+                android:backgroundTint="#F3F4F6"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

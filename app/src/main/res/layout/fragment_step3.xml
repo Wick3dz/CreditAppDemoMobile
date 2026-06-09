@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDI KASUS INDUSTRI KEUANGAN"
+                android:textSize="11sp"
+                android:textColor="#5B6CF9"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengajuan kredit digital"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulir → verifikasi dokumen → scoring otomatis"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="24dp"/>
+
+        <!-- ══════════ STEP INDICATOR ══════════ -->
+        <!--
+            Dot bulat menggunakan MaterialCardView (app:cardCornerRadius="16dp")
+            agar tidak butuh file drawable tambahan.
+            Pastikan dependency Material sudah ada:
+            implementation 'com.google.android.material:material:1.x.x'
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="28dp">
+
+            <!-- Step 1 — selesai (hijau) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#10B981"
+                    app:strokeWidth="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="✓"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Formulir"
+                    android:textSize="10sp"
+                    android:textColor="#10B981"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Garis step 1→2 (selesai) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.8"
+                android:layout_marginBottom="6dp"
+                android:background="#10B981" />
+
+            <!-- Step 2 — selesai (hijau) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#10B981"
+                    app:strokeWidth="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="✓"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Verifikasi"
+                    android:textSize="10sp"
+                    android:textColor="#10B981"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Garis step 2→3 (selesai) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.8"
+                android:layout_marginBottom="6dp"
+                android:background="#10B981" />
+
+            <!-- Step 3 — aktif (indigo) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#5B6CF9"
+                    app:strokeWidth="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="3"
+                        android:textSize="13sp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Scoring"
+                    android:textSize="10sp"
+                    android:textColor="#5B6CF9"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <!-- Garis step 3→4 (pending) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.8"
+                android:layout_marginBottom="6dp"
+                android:background="#D1D5DB" />
+
+            <!-- Step 4 — pending (abu outline) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:strokeColor="#D1D5DB"
+                    app:strokeWidth="1.5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4"
+                        android:textSize="13sp"
+                        android:textColor="#9CA3AF"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Keputusan"
+                    android:textSize="10sp"
+                    android:textColor="#9CA3AF"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+        <!-- ══════════ LOADING CARD ══════════ -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="40dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:indeterminateTint="#5B6CF9"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menghitung skor kredit..."
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#111827"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memadukan riwayat pembayaran,&#10;penghasilan, dan rasio utang."
+                    android:textSize="13sp"
+                    android:textColor="#6B7280"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ══════════ SECURITY TAG ══════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒"
+                android:textSize="12sp"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enkripsi 256-bit · Data Anda aman"
+                android:textSize="11sp"
+                android:textColor="#9CA3AF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

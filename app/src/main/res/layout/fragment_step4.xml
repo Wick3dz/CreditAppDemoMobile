@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDI KASUS INDUSTRI KEUANGAN"
+                android:textSize="11sp"
+                android:textColor="#5B6CF9"
+                android:letterSpacing="0.05"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengajuan kredit digital"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulir → verifikasi dokumen → scoring otomatis"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="28dp">
+
+                <!-- Step 1 — selesai (hijau) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#10B981"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="✓"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Formulir"
+                        android:textSize="10sp"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <!-- Garis step 1→2 (selesai) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#10B981" />
+
+                <!-- Step 2 — selesai (hijau) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#10B981"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="✓"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Verifikasi"
+                        android:textSize="10sp"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <!-- Garis step 2→3 (selesai) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#10B981" />
+
+                <!-- Step 3 — aktif (indigo) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#10B981"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="✓"
+                            android:textSize="14sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Scoring"
+                        android:textSize="10sp"
+                        android:textColor="#10B981"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <!-- Garis step 3→4 (pending) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.8"
+                    android:layout_marginBottom="6dp"
+                    android:background="#10B981" />
+
+                <!-- Step 4 — pending (abu outline) -->
+                <!-- Step 3 — aktif (indigo) -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#5B6CF9"
+                        app:strokeWidth="0dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="4"
+                            android:textSize="13sp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Keputusan"
+                        android:textSize="10sp"
+                        android:textColor="#5B6CF9"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD HASIL -->
+        <!-- Card Hasil SLIK -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="24dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasil simulasi SLIK OJK (demo)"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTraceId"
+                android:text="Trace ID: uat-1778044747292-abc1234"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Kol 1 -->
+            <TextView
+                android:id="@+id/tvKolLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kol 1"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvKolStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lancar"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvIndeksRisiko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indeks risiko internal: 93 / 100"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Riwayat Pembayaran -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat pembayaran"
+                android:textSize="13sp"
+                android:textColor="#374151"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <ProgressBar
+                    android:id="@+id/progressRiwayat"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="82"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tvScoreRiwayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="82 / 100"
+                    android:textSize="12sp"
+                    android:textColor="#374151" />
+
+            </LinearLayout>
+
+            <!-- Profil Penghasilan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profil penghasilan"
+                android:textSize="13sp"
+                android:textColor="#374151"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <ProgressBar
+                    android:id="@+id/progressPenghasilan"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tvScorePenghasilan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 / 100"
+                    android:textSize="12sp"
+                    android:textColor="#374151" />
+
+            </LinearLayout>
+
+            <!-- Rasio Utang -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rasio utang (DTI)"
+                android:textSize="13sp"
+                android:textColor="#374151"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <ProgressBar
+                    android:id="@+id/progressRasio"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="8dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="100"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/tvScoreRasio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 / 100"
+                    android:textSize="12sp"
+                    android:textColor="#374151" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0% cicilan terhadap penghasilan"
+                android:textSize="11sp"
+                android:textColor="#9CA3AF"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Rekomendasi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F9FAFB"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rekomendasi sistem"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#111827"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvRekomendasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sangat baik: profil pembayaran lancar, layak diprioritaskan."
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#111827"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Catatan: ini simulasi edukasi dan bukan data resmi SLIK OJK."
+                    android:textSize="11sp"
+                    android:textColor="#6B7280"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvSumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sumber: mock | Trace ID: mock-1777539300802-hso4vn"
+                    android:textSize="11sp"
+                    android:textColor="#6B7280" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Card Legend -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="24dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legend Posisi Skoring Nasabah"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvPosisiSkoringSaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posisi Anda saat ini: Kol 1 — Lancar"
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Kol 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#F0FDF4"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kol 1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#16A34A" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lancar"
+                    android:textSize="13sp"
+                    android:textColor="#15803D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✓ Posisi Anda"
+                    android:textSize="11sp"
+                    android:textColor="#16A34A" />
+
+            </LinearLayout>
+
+            <!-- Kol 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kol 2"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#D97706" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dalam perhatian khusus"
+                    android:textSize="13sp"
+                    android:textColor="#92400E" />
+
+            </LinearLayout>
+
+            <!-- Kol 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kol 3"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#DC2626" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kurang lancar"
+                    android:textSize="13sp"
+                    android:textColor="#991B1B" />
+
+            </LinearLayout>
+
+            <!-- Kol 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kol 4"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#DC2626" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Diragukan"
+                    android:textSize="13sp"
+                    android:textColor="#991B1B" />
+
+            </LinearLayout>
+
+            <!-- Kol 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kol 5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#DC2626" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Macet"
+                    android:textSize="13sp"
+                    android:textColor="#991B1B" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Selesai" />
+    </LinearLayout>
+</ScrollView>
